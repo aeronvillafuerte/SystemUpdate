@@ -56,7 +56,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         tablelist.setAutoCreateRowSorter(true);
-        tablelist.setBackground(new java.awt.Color(51, 255, 204));
+        tablelist.setBackground(new java.awt.Color(153, 255, 255));
         tablelist.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         tablelist.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -76,7 +76,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(10, 130, 890, 230);
 
-        add.setBackground(new java.awt.Color(153, 255, 204));
+        add.setBackground(new java.awt.Color(204, 255, 255));
         add.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         add.setText("ADD");
         add.setBorder(null);
@@ -88,7 +88,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.add(add);
         add.setBounds(10, 100, 80, 30);
 
-        delete.setBackground(new java.awt.Color(153, 255, 204));
+        delete.setBackground(new java.awt.Color(204, 255, 255));
         delete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         delete.setText("DELETE");
         delete.setBorder(null);
@@ -112,7 +112,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.add(search1);
         search1.setBounds(450, 80, 360, 30);
 
-        search.setBackground(new java.awt.Color(153, 255, 204));
+        search.setBackground(new java.awt.Color(204, 255, 255));
         search.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         search.setText("SEARCH");
         search.setBorder(null);
@@ -124,7 +124,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.add(search);
         search.setBounds(820, 80, 80, 30);
 
-        update.setBackground(new java.awt.Color(153, 255, 204));
+        update.setBackground(new java.awt.Color(204, 255, 255));
         update.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         update.setText("UPDATE");
         update.setBorder(null);
@@ -136,7 +136,7 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.add(update);
         update.setBounds(170, 100, 80, 30);
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setBackground(new java.awt.Color(204, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jButton1.setText("PRINT");
         jButton1.setBorder(null);
