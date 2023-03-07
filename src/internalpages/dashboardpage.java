@@ -75,7 +75,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("Patient Information System");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(20, 10, 320, 50);
+        jLabel1.setBounds(20, 20, 320, 50);
 
         jPanel3.setBackground(new java.awt.Color(153, 255, 204));
 
@@ -92,9 +92,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
 
         jPanel2.add(jPanel3);
@@ -103,11 +101,11 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel6.setText("Aceso's Health Care Clinic");
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(20, 50, 270, 20);
+        jLabel6.setBounds(20, 60, 270, 20);
 
         jLabel5.setText("Poblacion Ward II Minglanilla, Cebu");
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(20, 70, 170, 14);
+        jLabel5.setBounds(20, 80, 280, 14);
 
         create1.add(jPanel2);
         jPanel2.setBounds(0, 0, 560, 140);

@@ -228,22 +228,21 @@ public class dashboard extends javax.swing.JFrame {
 
         kwe.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         kwe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        kwe.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        kwe.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout navLayout = new javax.swing.GroupLayout(nav);
         nav.setLayout(navLayout);
         navLayout.setHorizontalGroup(
             navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(navLayout.createSequentialGroup()
-                .addGroup(navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(navLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(kwe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(dashpane, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 208, Short.MAX_VALUE)
-                        .addComponent(loginni, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(dashpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(loginni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );

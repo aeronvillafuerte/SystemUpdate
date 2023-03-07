@@ -36,31 +36,24 @@ public class Manage extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablelist = new javax.swing.JTable();
         add = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         delete = new javax.swing.JButton();
         search1 = new javax.swing.JTextField();
         search = new javax.swing.JButton();
         update = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(590, 383));
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel1.setLayout(null);
-
-        jLabel1.setFont(new java.awt.Font("Rockwell Condensed", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PATIENT'S LIST OF RECORD");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 10, 870, 50);
 
         tablelist.setAutoCreateRowSorter(true);
         tablelist.setBackground(new java.awt.Color(51, 255, 204));
@@ -94,17 +87,6 @@ public class Manage extends javax.swing.JFrame {
         });
         jPanel1.add(add);
         add.setBounds(10, 100, 80, 30);
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("x");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(890, 10, 11, 22);
 
         delete.setBackground(new java.awt.Color(153, 255, 204));
         delete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -153,8 +135,6 @@ public class Manage extends javax.swing.JFrame {
         });
         jPanel1.add(update);
         update.setBounds(170, 100, 80, 30);
-        jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(10, 60, 890, 10);
 
         jButton1.setBackground(new java.awt.Color(0, 255, 204));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -167,6 +147,47 @@ public class Manage extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
         jButton1.setBounds(800, 380, 100, 30);
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("PATIENT'S LIST OF RECORD");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("x");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 920, 66);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -317,8 +338,8 @@ public class Manage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton search;
     private javax.swing.JTextField search1;
     private static javax.swing.JTable tablelist;
