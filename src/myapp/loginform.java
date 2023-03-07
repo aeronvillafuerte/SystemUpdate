@@ -73,6 +73,7 @@ public class loginform extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         close1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -86,9 +87,9 @@ public class loginform extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel2.setBackground(new java.awt.Color(255, 204, 204));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel2.setForeground(new java.awt.Color(0, 153, 153));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("WELCOME!");
         jLabel2.setToolTipText("");
@@ -135,7 +136,7 @@ public class loginform extends javax.swing.JFrame {
                 clickMouseExited(evt);
             }
         });
-        clickhere.add(click, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 170, 30));
+        clickhere.add(click, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
 
         password.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Pasword", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
         password.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -149,9 +150,9 @@ public class loginform extends javax.swing.JFrame {
             }
         });
 
-        login.setBackground(new java.awt.Color(204, 255, 204));
+        login.setBackground(new java.awt.Color(0, 204, 204));
         login.setText("LOGIN");
-        login.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        login.setBorder(null);
         login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 loginMouseClicked(evt);
@@ -169,20 +170,26 @@ public class loginform extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(clickhere, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jCheckBox1)
-                    .addComponent(username, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                    .addComponent(password))
-                .addGap(19, 19, 19))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
                 .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(94, 94, 94))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(clickhere, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox1)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addContainerGap())
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                    .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(19, 19, 19)))))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -193,17 +200,17 @@ public class loginform extends javax.swing.JFrame {
                 .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jCheckBox1)
-                .addGap(41, 41, 41)
-                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox1)
+                .addGap(48, 48, 48)
+                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(clickhere, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(32, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(330, 40, 250, 350);
+        jPanel2.setBounds(430, 40, 290, 350);
 
         close.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         close.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -214,7 +221,7 @@ public class loginform extends javax.swing.JFrame {
             }
         });
         jPanel1.add(close);
-        close.setBounds(570, 0, 30, 30);
+        close.setBounds(760, 0, 30, 30);
 
         minimize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         minimize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -225,22 +232,27 @@ public class loginform extends javax.swing.JFrame {
             }
         });
         jPanel1.add(minimize);
-        minimize.setBounds(540, 0, 30, 30);
+        minimize.setBounds(730, 0, 30, 30);
 
         jPanel3.setBackground(new java.awt.Color(51, 255, 204));
         jPanel3.setLayout(null);
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/clicic-removebg-preview.png"))); // NOI18N
         jPanel3.add(jLabel1);
-        jLabel1.setBounds(-10, 70, 280, 260);
+        jLabel1.setBounds(-10, 70, 380, 260);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/agrs.jpg"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel3.add(jLabel5);
-        jLabel5.setBounds(0, 0, 290, 410);
+        jLabel5.setBounds(0, 0, 380, 410);
+
+        jLabel3.setText("jLabel3");
+        jPanel3.add(jLabel3);
+        jLabel3.setBounds(160, 330, 34, 14);
 
         jPanel1.add(jPanel3);
-        jPanel3.setBounds(0, 0, 290, 410);
+        jPanel3.setBounds(0, 0, 370, 410);
 
         close1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         close1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -251,20 +263,20 @@ public class loginform extends javax.swing.JFrame {
             }
         });
         jPanel1.add(close1);
-        close1.setBounds(570, 0, 30, 30);
+        close1.setBounds(760, 0, 30, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(602, 410));
+        setSize(new java.awt.Dimension(791, 410));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -402,6 +414,7 @@ public class loginform extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

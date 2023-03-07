@@ -5,7 +5,10 @@
  */
 package myapp;
 
+import java.awt.print.PrinterException;
+import java.text.MessageFormat;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -43,6 +46,7 @@ public class Manage extends javax.swing.JFrame {
         search = new javax.swing.JButton();
         update = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -52,14 +56,14 @@ public class Manage extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Rockwell Condensed", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PATIENT'S LIST OF RECORD");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(10, 10, 780, 50);
+        jLabel1.setBounds(10, 10, 870, 50);
 
         tablelist.setAutoCreateRowSorter(true);
-        tablelist.setBackground(new java.awt.Color(153, 255, 204));
+        tablelist.setBackground(new java.awt.Color(51, 255, 204));
         tablelist.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         tablelist.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -77,19 +81,19 @@ public class Manage extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tablelist);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 130, 770, 280);
+        jScrollPane1.setBounds(10, 130, 890, 230);
 
-        add.setBackground(new java.awt.Color(102, 255, 204));
+        add.setBackground(new java.awt.Color(153, 255, 204));
         add.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         add.setText("ADD");
-        add.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add.setBorder(null);
         add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addActionPerformed(evt);
             }
         });
         jPanel1.add(add);
-        add.setBounds(20, 80, 80, 23);
+        add.setBounds(10, 100, 80, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -100,19 +104,19 @@ public class Manage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(770, 10, 11, 22);
+        jLabel5.setBounds(890, 10, 11, 22);
 
-        delete.setBackground(new java.awt.Color(102, 255, 204));
+        delete.setBackground(new java.awt.Color(153, 255, 204));
         delete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         delete.setText("DELETE");
-        delete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        delete.setBorder(null);
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteActionPerformed(evt);
             }
         });
         jPanel1.add(delete);
-        delete.setBounds(110, 80, 80, 23);
+        delete.setBounds(90, 100, 80, 30);
 
         search1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         search1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -124,46 +128,58 @@ public class Manage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(search1);
-        search1.setBounds(340, 80, 350, 30);
+        search1.setBounds(450, 80, 360, 30);
 
-        search.setBackground(new java.awt.Color(102, 255, 204));
+        search.setBackground(new java.awt.Color(153, 255, 204));
         search.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         search.setText("SEARCH");
-        search.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        search.setBorder(null);
         search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchActionPerformed(evt);
             }
         });
         jPanel1.add(search);
-        search.setBounds(700, 80, 80, 30);
+        search.setBounds(820, 80, 80, 30);
 
-        update.setBackground(new java.awt.Color(102, 255, 204));
+        update.setBackground(new java.awt.Color(153, 255, 204));
         update.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         update.setText("UPDATE");
-        update.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        update.setBorder(null);
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateActionPerformed(evt);
             }
         });
         jPanel1.add(update);
-        update.setBounds(200, 80, 80, 23);
+        update.setBounds(170, 100, 80, 30);
         jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(10, 60, 770, 10);
+        jSeparator1.setBounds(10, 60, 890, 10);
+
+        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jButton1.setText("PRINT");
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(800, 380, 100, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 794, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 914, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(794, 424));
+        setSize(new java.awt.Dimension(914, 424));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -243,6 +259,17 @@ public class Manage extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_updateActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        MessageFormat header = new MessageFormat("PATIENT INFORMATION SYSTEM");
+        MessageFormat footer = new MessageFormat("ACESO'S HEALTH CARE CLINIC");
+        try{
+            tablelist.print(JTable.PrintMode.FIT_WIDTH, header, footer);
+            
+        }catch(PrinterException e){
+          JOptionPane.showMessageDialog(null, "Cannot be print!" +e.getMessage());  
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
  public static void AddRowToJTable(Object[] dataRow)
     {
        DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
@@ -286,6 +313,7 @@ public class Manage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton add;
     private javax.swing.JButton delete;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;

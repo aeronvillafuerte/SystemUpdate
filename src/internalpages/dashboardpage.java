@@ -54,6 +54,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         manage = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -68,7 +69,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         create1.setBackground(new java.awt.Color(0, 204, 204));
         create1.setLayout(null);
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
         jPanel2.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -99,15 +100,19 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jPanel2.add(jPanel3);
         jPanel3.setBounds(360, 0, 154, 140);
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel6.setText("Aceso's Health Care Clinic");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(20, 50, 270, 20);
 
+        jLabel5.setText("Poblacion Ward II Minglanilla, Cebu");
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(20, 70, 170, 14);
+
         create1.add(jPanel2);
         jPanel2.setBounds(0, 0, 560, 140);
 
-        manage.setBackground(new java.awt.Color(204, 255, 204));
+        manage.setBackground(new java.awt.Color(0, 204, 204));
         manage.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         manage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -137,8 +142,8 @@ public class dashboardpage extends javax.swing.JInternalFrame {
                 .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(manageLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         manageLayout.setVerticalGroup(
@@ -154,7 +159,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         create1.add(manage);
         manage.setBounds(70, 190, 150, 130);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -251,6 +256,7 @@ public class dashboardpage extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
