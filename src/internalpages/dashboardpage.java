@@ -10,6 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 import myapp.AddingPat;
 import myapp.Manage;
+import myapp.archive;
+import myapp.list;
 
 /**
  *
@@ -58,12 +60,13 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         manage = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        archive = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        patlist = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(570, 410));
 
@@ -158,14 +161,17 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         create1.add(manage);
         manage.setBounds(40, 190, 130, 120);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        archive.setBackground(new java.awt.Color(204, 255, 204));
+        archive.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        archive.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                archiveMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel1MouseEntered(evt);
+                archiveMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel1MouseExited(evt);
+                archiveMouseExited(evt);
             }
         });
 
@@ -175,22 +181,22 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Archive Info");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout archiveLayout = new javax.swing.GroupLayout(archive);
+        archive.setLayout(archiveLayout);
+        archiveLayout.setHorizontalGroup(
+            archiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, archiveLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, archiveLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        archiveLayout.setVerticalGroup(
+            archiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(archiveLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -198,20 +204,20 @@ public class dashboardpage extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        create1.add(jPanel1);
-        jPanel1.setBounds(370, 190, 140, 120);
+        create1.add(archive);
+        archive.setBounds(370, 190, 140, 120);
 
-        jPanel4.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        patlist.setBackground(new java.awt.Color(204, 255, 204));
+        patlist.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        patlist.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel4MouseClicked(evt);
+                patlistMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel4MouseEntered(evt);
+                patlistMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel4MouseExited(evt);
+                patlistMouseExited(evt);
             }
         });
 
@@ -221,22 +227,22 @@ public class dashboardpage extends javax.swing.JInternalFrame {
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Patient Lists");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout patlistLayout = new javax.swing.GroupLayout(patlist);
+        patlist.setLayout(patlistLayout);
+        patlistLayout.setHorizontalGroup(
+            patlistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, patlistLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(29, 29, 29))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, patlistLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        patlistLayout.setVerticalGroup(
+            patlistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(patlistLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
                 .addGap(4, 4, 4)
@@ -244,8 +250,12 @@ public class dashboardpage extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        create1.add(jPanel4);
-        jPanel4.setBounds(210, 190, 130, 120);
+        create1.add(patlist);
+        patlist.setBounds(210, 190, 130, 120);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/agrs (1).jpg"))); // NOI18N
+        create1.add(jLabel2);
+        jLabel2.setBounds(-10, 140, 570, 340);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -270,50 +280,62 @@ public class dashboardpage extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_manageMouseExited
 
     private void manageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageMouseClicked
-       Manage mg = new Manage();
-        mg.setVisible(true);
         this.dispose();
+        Manage mg = new Manage();
+        mg.setVisible(true);
+        
     }//GEN-LAST:event_manageMouseClicked
 
-    private void jPanel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseEntered
-        jPanel1.setBackground(navcolor);
-    }//GEN-LAST:event_jPanel1MouseEntered
+    private void archiveMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archiveMouseEntered
+        archive.setBackground(navcolor);
+    }//GEN-LAST:event_archiveMouseEntered
 
-    private void jPanel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseExited
-        jPanel1.setBackground(bodycolor);
-    }//GEN-LAST:event_jPanel1MouseExited
+    private void archiveMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archiveMouseExited
+        archive.setBackground(bodycolor);
+    }//GEN-LAST:event_archiveMouseExited
 
-    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel4MouseClicked
+    private void patlistMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patlistMouseClicked
+        this.dispose();
+        list ls = new list();
+        ls.setVisible(true);
+        
+    }//GEN-LAST:event_patlistMouseClicked
 
-    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-       jPanel4.setBackground(navcolor);
-    }//GEN-LAST:event_jPanel4MouseEntered
+    private void patlistMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patlistMouseEntered
+       patlist.setBackground(navcolor);
+    }//GEN-LAST:event_patlistMouseEntered
 
-    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-       jPanel4.setBackground(bodycolor);
-    }//GEN-LAST:event_jPanel4MouseExited
+    private void patlistMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_patlistMouseExited
+       patlist.setBackground(bodycolor);
+    }//GEN-LAST:event_patlistMouseExited
+
+    private void archiveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_archiveMouseClicked
+      this.dispose();
+      archive ar = new archive ();
+      ar.setVisible (true);
+      
+    }//GEN-LAST:event_archiveMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel archive;
     private javax.swing.JPanel create1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPanel manage;
+    private javax.swing.JPanel patlist;
     // End of variables declaration//GEN-END:variables
 
     public static class first {

@@ -39,15 +39,15 @@ public class AddingPat extends javax.swing.JFrame {
         create = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        name = new javax.swing.JTextField();
-        phone = new javax.swing.JTextField();
-        address = new javax.swing.JTextField();
-        gender = new javax.swing.JTextField();
-        emer = new javax.swing.JTextField();
+        patid = new javax.swing.JTextField();
+        mid = new javax.swing.JTextField();
+        first = new javax.swing.JTextField();
+        lst = new javax.swing.JTextField();
         age = new javax.swing.JTextField();
+        bd = new javax.swing.JTextField();
+        gen = new javax.swing.JTextField();
         att = new javax.swing.JTextField();
-        date = new javax.swing.JTextField();
-        diag = new javax.swing.JTextField();
+        emer = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -59,10 +59,14 @@ public class AddingPat extends javax.swing.JFrame {
         add = new javax.swing.JButton();
         del = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        diag = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -70,6 +74,7 @@ public class AddingPat extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         create.setBackground(new java.awt.Color(0, 204, 204));
+        create.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -79,61 +84,64 @@ public class AddingPat extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
+        create.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(959, 0, 21, 31));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel2.setText("NAME: ");
+        jLabel2.setText("PATIENT ID:");
+        create.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 102, 83, 39));
+        create.add(patid, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 105, 225, 33));
 
-        name.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        phone.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        phone.addActionListener(new java.awt.event.ActionListener() {
+        mid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                phoneActionPerformed(evt);
+                midActionPerformed(evt);
             }
         });
+        create.add(mid, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 216, 225, 33));
+        create.add(first, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 161, 225, 33));
 
-        address.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        gender.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        gender.addActionListener(new java.awt.event.ActionListener() {
+        lst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genderActionPerformed(evt);
+                lstActionPerformed(evt);
             }
         });
-
-        emer.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        age.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        att.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        date.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        diag.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        create.add(lst, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 267, 225, 33));
+        create.add(age, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 105, 181, 33));
+        create.add(bd, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 318, 225, 33));
+        create.add(gen, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 159, 181, 36));
+        create.add(att, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 216, 181, 33));
+        create.add(emer, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 181, 30));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel3.setText("ADDRESS:");
+        jLabel3.setText("FIRST NAME:");
+        create.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel4.setText("PHONE NUMBER:");
+        jLabel4.setText("MIDDLE NAME:");
+        create.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 225, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel6.setText("GENDER:");
+        jLabel6.setText("LAST NAME:");
+        create.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 267, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel7.setText("AGE:");
+        jLabel7.setText("BIRTHDATE:");
+        create.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 314, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel8.setText("EMERGENCY CONTACT:");
+        jLabel8.setText("AGE:");
+        create.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 114, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel9.setText("ATTENDING PHYSICIAN:");
+        jLabel9.setText("GENDER:");
+        create.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 170, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel10.setText("DATE OF FIRST VISIT:");
+        jLabel10.setText("ATTENDING PHYSICIAN:");
+        create.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 225, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel11.setText("DIAGNOSIS:");
+        create.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, -1, -1));
 
         add.setBackground(new java.awt.Color(153, 255, 204));
         add.setText("ADD");
@@ -143,6 +151,7 @@ public class AddingPat extends javax.swing.JFrame {
                 addActionPerformed(evt);
             }
         });
+        create.add(add, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 370, 106, 34));
 
         del.setBackground(new java.awt.Color(153, 255, 204));
         del.setText("DELETE");
@@ -152,6 +161,7 @@ public class AddingPat extends javax.swing.JFrame {
                 delActionPerformed(evt);
             }
         });
+        create.add(del, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 106, 34));
 
         jButton1.setBackground(new java.awt.Color(51, 255, 204));
         jButton1.setText("BROWSE");
@@ -161,10 +171,18 @@ public class AddingPat extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        create.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(788, 201, 69, 23));
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("CREATE PATIENT'S INFORMATIONS");
+        create.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel12.setBackground(new java.awt.Color(0, 255, 204));
         jLabel12.setForeground(new java.awt.Color(51, 255, 204));
         jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        create.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 99, 102, 96));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -178,19 +196,12 @@ public class AddingPat extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("CREATE PATIENT'S INFORMATIONS");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(125, 125, 125)
+                .addContainerGap(878, Short.MAX_VALUE)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -199,127 +210,21 @@ public class AddingPat extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
         );
 
-        javax.swing.GroupLayout createLayout = new javax.swing.GroupLayout(create);
-        create.setLayout(createLayout);
-        createLayout.setHorizontalGroup(
-            createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(createLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(createLayout.createSequentialGroup()
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(17, 17, 17)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(address, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(name, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(phone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(gender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(age, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel9)
-                        .addComponent(jLabel8))
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createLayout.createSequentialGroup()
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(diag, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(emer, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(att, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGap(58, 58, 58)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGap(58, 58, 58)
-                                .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(114, 114, 114))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createLayout.createSequentialGroup()
-                        .addComponent(del, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(241, 241, 241))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createLayout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        createLayout.setVerticalGroup(
-            createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(createLayout.createSequentialGroup()
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(createLayout.createSequentialGroup()
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)
-                            .addComponent(emer, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(address, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel9)
-                            .addComponent(att, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(createLayout.createSequentialGroup()
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(phone, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel10)
-                                    .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGap(15, 15, 15)
-                                .addComponent(diag, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(del, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(25, 25, 25))
-                            .addGroup(createLayout.createSequentialGroup()
-                                .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addGroup(createLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel11)))
-                                .addGap(18, 18, 18)
-                                .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(38, 38, 38))))
-                    .addGroup(createLayout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(jLabel7)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
+        create.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 916, 50));
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel14.setText("EMERGENCY CONTACT:");
+        create.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 276, -1, -1));
+        create.add(diag, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, 181, 30));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/agrs (1).jpg"))); // NOI18N
+        create.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 750, 410));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/abin.png"))); // NOI18N
+        jLabel16.setText("jLabel16");
+        create.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 30, 460, 400));
 
         jPanel1.add(create);
         create.setBounds(0, 0, 920, 430);
@@ -341,6 +246,8 @@ public class AddingPat extends javax.swing.JFrame {
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
         this.dispose();
+        Manage ap = new Manage();
+        ap.setVisible(true);
     }//GEN-LAST:event_jLabel13MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -361,40 +268,43 @@ public class AddingPat extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void delActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delActionPerformed
-        name.setText(null);
-        address.setText(null);
-        phone.setText(null);
-        gender.setText(null);
+        patid.setText(null);
+        first.setText(null);
+        mid.setText(null);
+        lst.setText(null);
+        bd.setText(null);
         age.setText(null);
-        emer.setText(null);
+        gen.setText(null);
         att.setText(null);
-        date.setText(null);
-        diag.setText(null);
+        emer.setText(null);
+       diag.setText(null);
         
     }//GEN-LAST:event_delActionPerformed
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
         Manage.AddRowToJTable(new Object[]{
-            name.getText(),
-            address.getText(),
-            phone.getText(),
-            gender.getText(),
+            patid.getText(),
+            first.getText(),
+            mid.getText(),
+            lst.getText(),
+            bd.getText(),
             age.getText(),
-            emer.getText(),
+            gen.getText(),
             att.getText(),
-            date.getText(),
+            emer.getText(),
             diag.getText(),
+           
 
         });
     }//GEN-LAST:event_addActionPerformed
 
-    private void genderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderActionPerformed
+    private void lstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lstActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_genderActionPerformed
+    }//GEN-LAST:event_lstActionPerformed
 
-    private void phoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneActionPerformed
+    private void midActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_phoneActionPerformed
+    }//GEN-LAST:event_midActionPerformed
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         this.dispose();
@@ -439,21 +349,24 @@ public class AddingPat extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton add;
-    private javax.swing.JTextField address;
     private javax.swing.JTextField age;
     private javax.swing.JTextField att;
+    private javax.swing.JTextField bd;
     private javax.swing.JPanel create;
-    private javax.swing.JTextField date;
     private javax.swing.JButton del;
     private javax.swing.JTextField diag;
     private javax.swing.JTextField emer;
-    private javax.swing.JTextField gender;
+    private javax.swing.JTextField first;
+    private javax.swing.JTextField gen;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -464,7 +377,8 @@ public class AddingPat extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField name;
-    private javax.swing.JTextField phone;
+    private javax.swing.JTextField lst;
+    private javax.swing.JTextField mid;
+    private javax.swing.JTextField patid;
     // End of variables declaration//GEN-END:variables
 }

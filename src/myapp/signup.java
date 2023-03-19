@@ -45,22 +45,27 @@ public class signup extends javax.swing.JFrame {
         minimize = new javax.swing.JLabel();
         close = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("AUTHENTICATON SIGNUP FORM");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 470, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/clicic-removebg-preview.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 229, 195));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Minimum of 6 (six) characters");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 183, -1));
 
         submit.setBackground(new java.awt.Color(51, 255, 204));
         submit.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -76,6 +81,7 @@ public class signup extends javax.swing.JFrame {
                 submitActionPerformed(evt);
             }
         });
+        jPanel1.add(submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(675, 327, 169, 38));
 
         namef.setBackground(new java.awt.Color(0, 204, 204));
         namef.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "First Name"));
@@ -84,6 +90,7 @@ public class signup extends javax.swing.JFrame {
                 namefActionPerformed(evt);
             }
         });
+        jPanel1.add(namef, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 230, 44));
 
         namel.setBackground(new java.awt.Color(0, 204, 204));
         namel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Last Name"));
@@ -92,6 +99,7 @@ public class signup extends javax.swing.JFrame {
                 namelActionPerformed(evt);
             }
         });
+        jPanel1.add(namel, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 230, 47));
 
         phonen.setBackground(new java.awt.Color(0, 204, 204));
         phonen.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Phone Number"));
@@ -100,6 +108,7 @@ public class signup extends javax.swing.JFrame {
                 phonenActionPerformed(evt);
             }
         });
+        jPanel1.add(phonen, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 230, 47));
 
         ema.setBackground(new java.awt.Color(0, 204, 204));
         ema.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Email"));
@@ -108,6 +117,7 @@ public class signup extends javax.swing.JFrame {
                 emaActionPerformed(evt);
             }
         });
+        jPanel1.add(ema, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 220, 230, 47));
 
         pass.setBackground(new java.awt.Color(0, 204, 204));
         pass.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Password"));
@@ -116,6 +126,7 @@ public class signup extends javax.swing.JFrame {
                 passActionPerformed(evt);
             }
         });
+        jPanel1.add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 229, 47));
 
         pos.setBackground(new java.awt.Color(0, 204, 204));
         pos.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Position"));
@@ -124,6 +135,7 @@ public class signup extends javax.swing.JFrame {
                 posActionPerformed(evt);
             }
         });
+        jPanel1.add(pos, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 160, 229, 45));
 
         conpass.setBackground(new java.awt.Color(0, 204, 204));
         conpass.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Confirm Password"));
@@ -132,6 +144,7 @@ public class signup extends javax.swing.JFrame {
                 conpassActionPerformed(evt);
             }
         });
+        jPanel1.add(conpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 229, 43));
 
         minimize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         minimize.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -141,6 +154,7 @@ public class signup extends javax.swing.JFrame {
                 minimizeMouseClicked(evt);
             }
         });
+        jPanel1.add(minimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(818, 0, 30, 30));
 
         close.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         close.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -150,85 +164,9 @@ public class signup extends javax.swing.JFrame {
                 closeMouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(conpass, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(submit, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(phonen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(namef, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
-                                                .addComponent(namel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(pos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGap(29, 29, 29)
-                                            .addComponent(ema, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addGap(34, 34, 34))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(77, 77, 77)
-                        .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jSeparator1)
-                        .addContainerGap())))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(close, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 13, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(namel, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(namef, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(phonen, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pos, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ema, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-                            .addComponent(pass))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(conpass, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addComponent(submit, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41))
-        );
+        jPanel1.add(close, new org.netbeans.lib.awtextra.AbsoluteConstraints(848, 0, 30, 30));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 49, 860, 10));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -245,41 +183,15 @@ public class signup extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void phonenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phonenActionPerformed
-        phonen.setText("");
-    }//GEN-LAST:event_phonenActionPerformed
-
-    private void namelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namelActionPerformed
-        namel.setText("");
-    }//GEN-LAST:event_namelActionPerformed
-
-    private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
-        pass.setText("");
-    }//GEN-LAST:event_passActionPerformed
-
     private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_minimizeMouseClicked
         setState(ICONIFIED);
     }//GEN-LAST:event_minimizeMouseClicked
 
     private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
-        System.exit(0);
+        this.dispose();
+        loginform lf = new loginform();
+        lf.setVisible(true);
     }//GEN-LAST:event_closeMouseClicked
-
-    private void namefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namefActionPerformed
-       namef.setText("");
-    }//GEN-LAST:event_namefActionPerformed
-
-    private void emaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emaActionPerformed
-        ema.setText("");
-    }//GEN-LAST:event_emaActionPerformed
-
-    private void posActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_posActionPerformed
-      pos.setText("");
-    }//GEN-LAST:event_posActionPerformed
-
-    private void conpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conpassActionPerformed
-       conpass.setText("*");
-    }//GEN-LAST:event_conpassActionPerformed
 
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
           dashboardpage db = new dashboardpage();
@@ -290,6 +202,34 @@ public class signup extends javax.swing.JFrame {
          dashboardpage db = new dashboardpage();
          db.setVisible(true);
     }//GEN-LAST:event_submitMouseClicked
+
+    private void namelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namelActionPerformed
+        namel.setText("");
+    }//GEN-LAST:event_namelActionPerformed
+
+    private void posActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_posActionPerformed
+        pos.setText("");
+    }//GEN-LAST:event_posActionPerformed
+
+    private void emaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emaActionPerformed
+        ema.setText("");
+    }//GEN-LAST:event_emaActionPerformed
+
+    private void namefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namefActionPerformed
+        namef.setText("");
+    }//GEN-LAST:event_namefActionPerformed
+
+    private void phonenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phonenActionPerformed
+        phonen.setText("");
+    }//GEN-LAST:event_phonenActionPerformed
+
+    private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
+        pass.setText("");
+    }//GEN-LAST:event_passActionPerformed
+
+    private void conpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conpassActionPerformed
+        conpass.setText("*");
+    }//GEN-LAST:event_conpassActionPerformed
 
     /**
      * @param args the command line arguments
@@ -328,19 +268,20 @@ public class signup extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel close;
-    public static javax.swing.JPasswordField conpass;
-    public static javax.swing.JTextField ema;
+    private javax.swing.JPasswordField conpass;
+    private javax.swing.JTextField ema;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel minimize;
-    public static javax.swing.JTextField namef;
-    public static javax.swing.JTextField namel;
-    public static javax.swing.JTextField pass;
-    public static javax.swing.JTextField phonen;
-    public static javax.swing.JTextField pos;
+    private javax.swing.JTextField namef;
+    private javax.swing.JTextField namel;
+    private javax.swing.JTextField pass;
+    private javax.swing.JTextField phonen;
+    private javax.swing.JTextField pos;
     private javax.swing.JButton submit;
     // End of variables declaration//GEN-END:variables
 }

@@ -161,6 +161,7 @@ public class dashboard extends javax.swing.JFrame {
         maindesktop.setBounds(210, 50, 570, 410);
 
         nav.setBackground(new java.awt.Color(0, 153, 153));
+        nav.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -184,6 +185,8 @@ public class dashboard extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        nav.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 75, 220, -1));
+
         loginni.setBackground(new java.awt.Color(0, 153, 153));
         loginni.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -203,6 +206,8 @@ public class dashboard extends javax.swing.JFrame {
         userpage1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         userpage1.setText("ACCOUNT ");
         loginni.add(userpage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 40));
+
+        nav.add(loginni, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 277, -1, -1));
 
         dashpane.setBackground(new java.awt.Color(0, 153, 153));
         dashpane.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -224,45 +229,15 @@ public class dashboard extends javax.swing.JFrame {
         jLabel2.setText("DASHBOARD ");
         dashpane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 40));
 
+        nav.add(dashpane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 225, -1, 43));
+
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/icons8-circled-user-male-skin-type-7-48.png"))); // NOI18N
+        nav.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 14, -1, 43));
 
         kwe.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         kwe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         kwe.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout navLayout = new javax.swing.GroupLayout(nav);
-        nav.setLayout(navLayout);
-        navLayout.setHorizontalGroup(
-            navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navLayout.createSequentialGroup()
-                .addGroup(navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(navLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(kwe, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(dashpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(loginni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        navLayout.setVerticalGroup(
-            navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(navLayout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(kwe, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(dashpane, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(loginni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(93, 93, 93))
-        );
+        nav.add(kwe, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 25, 131, 24));
 
         jPanel2.add(nav);
         nav.setBounds(0, 50, 210, 410);

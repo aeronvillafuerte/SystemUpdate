@@ -35,18 +35,45 @@ public class Manage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablelist = new javax.swing.JTable();
-        add = new javax.swing.JButton();
-        delete = new javax.swing.JButton();
         search1 = new javax.swing.JTextField();
         search = new javax.swing.JButton();
-        update = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        emer = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        bd = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        age = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        gen = new javax.swing.JTextField();
+        att = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        diag = new javax.swing.JTextArea();
+        delete = new javax.swing.JButton();
+        update = new javax.swing.JButton();
+        delete1 = new javax.swing.JButton();
+        patid = new javax.swing.JTextField();
+        lst = new javax.swing.JTextField();
+        mid = new javax.swing.JTextField();
+        first = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        add1 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/aaa.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -60,45 +87,27 @@ public class Manage extends javax.swing.JFrame {
         tablelist.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         tablelist.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Aeron Villafuerte", "Argao,Cebu", "09323987715", "Female", "20", "093457621", "Dr.Krztel Camello", "10/11/12", "buang"},
-                {"Sweet Casia", "Minglanilla", "095643278", "Female", "19", "075643289", "Dr.Kryztel Camello", "09/11/23", "mini"},
-                {"Darla Ipon", "Minglanilla", "097654328", "Female", "21", "098765432", "Dr.Kryztel Camello", "02/03/23", "shano"},
-                {"Caryll Deiparine", "Sibonga", "098765432", "Female", "19", "012346758", "Dr.Kryztel Camello", "09/23/23", "kigwa"},
-                {"Edgardo Siton", "Mingalnilla", "09876123", "Male", "50", "09814354657567", "Dr. Kryztel Camello", "07/01/23", "animal"}
+                {"P-101", "Aeron", "G.", "Villafuerte", "02-20-2003", "20", "Female", "Dr. Kryztel Camello", "09876543", "kigwa"},
+                {"P-102", "Sweet Venice", "M.", "Casia", "09-12-2003", "19", "Female", "Dr.Kryztwl", "012345667", "shano"},
+                {"P-103", "Edgaro", "U.", "Siton", "10-23-1998", "30", "Male", "Dr.Kryztel", "09876542", "buang"},
+                {"P-104", "Darla Kayla", "M.", "Ipon", "18-24-2000", "23", "Female", "Dr.Kryztel Camello", "09345768", "mini"},
+                {"P-105", "Caryll Jean", "0.", "Deiparine", "05-20-14", "20", "Female", "Dr.Kryztel Camello", "098765433", "tuya"}
             },
             new String [] {
-                "Name", "Address", "Phone Number", "Gender", "Age", "Emergency Contant", "Att. Physician", "Date (Visited)", "Diagnosis"
+                "Patient ID", "First Name", "Middle Initial", "Last Name", "Birthdate", "Age", "Gender", "Att. Physician", "Emergency Contact", "Diagnosis"
             }
         ));
+        tablelist.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         tablelist.setGridColor(new java.awt.Color(204, 255, 204));
+        tablelist.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablelistMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tablelist);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 130, 890, 230);
-
-        add.setBackground(new java.awt.Color(204, 255, 255));
-        add.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        add.setText("ADD");
-        add.setBorder(null);
-        add.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addActionPerformed(evt);
-            }
-        });
-        jPanel1.add(add);
-        add.setBounds(10, 100, 80, 30);
-
-        delete.setBackground(new java.awt.Color(204, 255, 255));
-        delete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        delete.setText("DELETE");
-        delete.setBorder(null);
-        delete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteActionPerformed(evt);
-            }
-        });
-        jPanel1.add(delete);
-        delete.setBounds(90, 100, 80, 30);
+        jScrollPane1.setBounds(10, 130, 890, 90);
 
         search1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         search1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -110,7 +119,7 @@ public class Manage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(search1);
-        search1.setBounds(450, 80, 360, 30);
+        search1.setBounds(190, 80, 530, 30);
 
         search.setBackground(new java.awt.Color(204, 255, 255));
         search.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -122,7 +131,94 @@ public class Manage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(search);
-        search.setBounds(820, 80, 80, 30);
+        search.setBounds(730, 80, 80, 30);
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("MANAGE PATIENTS");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 13, 810, 40));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("x");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(891, 13, -1, -1));
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 920, 66);
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setText("FIRST NAME:");
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 47, 100, 30));
+        jPanel4.add(emer, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 170, 30));
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setText("BIRTHDATE: ");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 100, 30));
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setText("MIDDLE INITIAL:");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 83, 100, 30));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel7.setText("ATTENDING PHYSICIAN: ");
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, 150, 30));
+        jPanel4.add(bd, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 170, 30));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel8.setText("LAST NAME:");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 100, 30));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel9.setText("PATIENT ID:");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 100, 30));
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel10.setText("AGE:");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 50, 30));
+        jPanel4.add(age, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 170, 30));
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel11.setText("DIAGNOSIS:");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 80, 30));
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel12.setText("EMERGENCY CONTACT:");
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 150, 30));
+        jPanel4.add(gen, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 170, 30));
+        jPanel4.add(att, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 170, 30));
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel13.setText("GENDER:");
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 60, 30));
+
+        diag.setColumns(20);
+        diag.setRows(5);
+        jScrollPane2.setViewportView(diag);
+
+        jPanel4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 170, -1));
+
+        delete.setBackground(new java.awt.Color(204, 255, 255));
+        delete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        delete.setText("DELETE");
+        delete.setBorder(null);
+        delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteActionPerformed(evt);
+            }
+        });
+        jPanel4.add(delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 80, 30));
 
         update.setBackground(new java.awt.Color(204, 255, 255));
         update.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -133,8 +229,25 @@ public class Manage extends javax.swing.JFrame {
                 updateActionPerformed(evt);
             }
         });
-        jPanel1.add(update);
-        update.setBounds(170, 100, 80, 30);
+        jPanel4.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 80, 30));
+
+        delete1.setBackground(new java.awt.Color(204, 255, 255));
+        delete1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        delete1.setText("CLEAR");
+        delete1.setBorder(null);
+        delete1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                delete1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(delete1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, 80, 30));
+        jPanel4.add(patid, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 170, 30));
+        jPanel4.add(lst, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 170, 30));
+        jPanel4.add(mid, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 170, 30));
+        jPanel4.add(first, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 170, 30));
+
+        jPanel1.add(jPanel4);
+        jPanel4.setBounds(10, 230, 890, 220);
 
         jButton1.setBackground(new java.awt.Color(204, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -146,48 +259,24 @@ public class Manage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(800, 380, 100, 30);
+        jButton1.setBounds(820, 80, 80, 30);
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PATIENT'S LIST OF RECORD");
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("x");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+        add1.setBackground(new java.awt.Color(204, 255, 255));
+        add1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        add1.setText("ADD");
+        add1.setBorder(null);
+        add1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add1ActionPerformed(evt);
             }
         });
+        jPanel1.add(add1);
+        add1.setBounds(10, 80, 80, 30);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addContainerGap(16, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(0, 0, 920, 66);
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconpics/abin.png"))); // NOI18N
+        jPanel1.add(jLabel15);
+        jLabel15.setBounds(-10, -180, 430, 720);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -197,36 +286,16 @@ public class Manage extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(914, 424));
+        setSize(new java.awt.Dimension(914, 464));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
-        AddingPat ap= new AddingPat();
-        ap.setVisible(true);
-        ap.pack();
-        ap.setLocationRelativeTo(null);
-        ap.setDefaultCloseOperation(Manage.DISPOSE_ON_CLOSE);
-    }//GEN-LAST:event_addActionPerformed
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
-
-    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
-        DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
-        try{
-            int SelectedRowIndex = tablelist.getSelectedRow();
-            model.removeRow(SelectedRowIndex);
-        }catch(Exception ex)
-        {
-            JOptionPane.showMessageDialog(null,ex);
-        }
-
-    }//GEN-LAST:event_deleteActionPerformed
 
     private void search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search1ActionPerformed
         DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
@@ -242,45 +311,6 @@ public class Manage extends javax.swing.JFrame {
         obj.setRowFilter(RowFilter.regexFilter(search1.getText()));
     }//GEN-LAST:event_searchActionPerformed
 
-    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-        
-        DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
-         int selectedRowIndex = tablelist.getSelectedRow();
-         
-        String name = model.getValueAt(selectedRowIndex,0).toString();
-        String address = model.getValueAt(selectedRowIndex,1).toString();
-        String phone = model.getValueAt(selectedRowIndex,2).toString();
-        String gender = model.getValueAt(selectedRowIndex,3).toString();
-        String age= model.getValueAt(selectedRowIndex,4).toString();
-        String emer = model.getValueAt(selectedRowIndex,5).toString();
-        String att = model.getValueAt(selectedRowIndex,6).toString();
-        String date= model.getValueAt(selectedRowIndex,7).toString();
-        String diag= model.getValueAt(selectedRowIndex,8).toString();
-        
-        String NewName= JOptionPane.showInputDialog(null,"Enter the new name:",name);
-        String NewAddress= JOptionPane.showInputDialog(null,"Enter the new address:",address);
-        String NewPhone= JOptionPane.showInputDialog(null,"Enter the new phone number:",phone);
-        String NewGender= JOptionPane.showInputDialog(null,"Enter the new gender:",gender);
-        String NewAge= JOptionPane.showInputDialog(null,"Enter the new age:",age);
-        String NewEmer= JOptionPane.showInputDialog(null,"Enter the new emergency contact:",emer);
-        String NewAtt= JOptionPane.showInputDialog(null,"Enter the new attending physician:",att);
-        String NewDate= JOptionPane.showInputDialog(null,"Enter the new date:",date);
-        String NewDiag= JOptionPane.showInputDialog(null,"Enter the new diagnosis:",diag);
-        
-        model.setValueAt(NewName, selectedRowIndex,0);
-        model.setValueAt(NewAddress, selectedRowIndex, 1);
-        model.setValueAt(NewPhone, selectedRowIndex, 2);
-        model.setValueAt(NewGender, selectedRowIndex, 3);
-        model.setValueAt(NewAge, selectedRowIndex, 4);
-        model.setValueAt(NewEmer, selectedRowIndex, 5);
-        model.setValueAt(NewAtt, selectedRowIndex, 6);
-        model.setValueAt(NewDate, selectedRowIndex, 7);
-        model.setValueAt(NewDiag, selectedRowIndex, 8);
-        
-        
-        
-    }//GEN-LAST:event_updateActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         MessageFormat header = new MessageFormat("PATIENT INFORMATION SYSTEM");
         MessageFormat footer = new MessageFormat("ACESO'S HEALTH CARE CLINIC");
@@ -291,6 +321,62 @@ public class Manage extends javax.swing.JFrame {
           JOptionPane.showMessageDialog(null, "Cannot be print!" +e.getMessage());  
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void delete1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delete1ActionPerformed
+       patid.setText(null);
+        first.setText(null);
+        mid.setText(null);
+        lst.setText(null);
+        bd.setText(null);
+        age.setText(null);
+        gen.setText(null);
+        att.setText(null);
+        emer.setText(null);
+       diag.setText(null);
+    }//GEN-LAST:event_delete1ActionPerformed
+
+    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
+   int i = tablelist.getSelectedRow();
+    DefaultTableModel model = (DefaultTableModel) tablelist.getModel();
+    if (i >= 0)
+    {
+    model.setValueAt(patid.getText(), i, 0);
+     model.setValueAt(first.getText(), i, 1);
+      model.setValueAt(mid.getText(), i, 2);
+       model.setValueAt(lst.getText(), i, 3);
+        model.setValueAt(bd.getText(), i, 4);
+         model.setValueAt(age.getText(), i, 5);
+          model.setValueAt(gen.getText(), i, 6);
+           model.setValueAt(att.getText(), i, 7);
+            model.setValueAt(emer.getText(), i, 8);
+             model.setValueAt(diag.getText(), i, 9);
+ 
+
+    }//GEN-LAST:event_updateActionPerformed
+    
+   
+}
+      
+    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
+        DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
+        try{
+            int SelectedRowIndex = tablelist.getSelectedRow();
+            model.removeRow(SelectedRowIndex);
+        }catch(Exception ex)
+        {
+            JOptionPane.showMessageDialog(null,ex);
+        }
+    }//GEN-LAST:event_deleteActionPerformed
+
+    private void tablelistMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablelistMouseClicked
+      
+    }//GEN-LAST:event_tablelistMouseClicked
+
+    private void add1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add1ActionPerformed
+       DefaultTableModel model = (DefaultTableModel) tablelist.getModel();
+       model.addRow(new Object[]{patid.getText(),first.getText(),mid.getText(),lst.getText(),bd.getText(),
+       age.getText(),gen.getText(),att.getText(),emer.getText(),diag.getText() });
+    }//GEN-LAST:event_add1ActionPerformed
  public static void AddRowToJTable(Object[] dataRow)
     {
        DefaultTableModel model = (DefaultTableModel)tablelist.getModel();
@@ -332,14 +418,39 @@ public class Manage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton add;
+    private javax.swing.JButton add1;
+    private javax.swing.JTextField age;
+    private javax.swing.JTextField att;
+    private javax.swing.JTextField bd;
     private javax.swing.JButton delete;
+    private javax.swing.JButton delete1;
+    private javax.swing.JTextArea diag;
+    private javax.swing.JTextField emer;
+    private javax.swing.JTextField first;
+    private javax.swing.JTextField gen;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField lst;
+    private javax.swing.JTextField mid;
+    private javax.swing.JTextField patid;
     private javax.swing.JButton search;
     private javax.swing.JTextField search1;
     private static javax.swing.JTable tablelist;
